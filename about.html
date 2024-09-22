@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate Button</title>
+    <style>
+        .translate-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .translate-button:hover {
+            background-color: #45a049;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 id="text">Hello! I’m [Your Name], a passionate Frontend Web Developer and Video Editor currently honing my skills at Bamgboye Irede Proxy Coding School.</h2>
+
+    <button class="translate-button" onclick="translateText()">Translate</button>
+
+    <script>
+        function translateText() {
+            const textElement = document.getElementById('text');
+            textElement.innerText = "¡Hola! Soy [Tu Nombre], un apasionado desarrollador web frontend y editor de video que actualmente está perfeccionando mis habilidades en la Escuela de Codificación Proxy Bamgboye Irede...";
+            // Add more translations as needed
+        }
+    </script>
+
+</body>
+</html>
